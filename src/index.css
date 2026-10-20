@@ -11,3 +11,47 @@ div[class$="contentContainer"] {
   padding: 3.5rem;
   line-height: 1.6rem;
 }
+
+/* ── Review callouts (draft only; remove before students see the site) ── */
+.review-note,
+details.review-alt {
+  border-left: 4px solid #d4a017;
+  background-color: rgba(212, 160, 23, 0.08);
+  border-radius: 0 4px 4px 0;
+  padding: 0.75rem 1rem;
+  margin: 1.25rem 0;
+}
+
+.review-note p:last-child,
+.review-note ul:last-child,
+details.review-alt > :last-child {
+  margin-bottom: 0;
+}
+
+details.review-alt {
+  border-left-color: var(--secondary, #6a4c93);
+  background-color: var(--bg-accent, rgba(106, 76, 147, 0.06));
+}
+
+details.review-alt > summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--secondary-dark, #4b3470);
+}
+
+details.review-alt[open] > summary {
+  margin-bottom: 0.75rem;
+}
+
+.crafts {
+  border: 1px dotted var(--border-medium, #ccc);
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  margin: 0 0 1.5rem;
+  font-size: 0.95rem;
+}
+
+.crafts p,
+.crafts ul {
+  margin-bottom: 0;
+}
