@@ -7,10 +7,10 @@ const chapterModules = import.meta.glob('./*/index.jsx', { eager: true })
 
 // Section configuration
 const config = {
-  id: "introduction",
-  title: "Introduction",
+  id: "book1",
+  title: "Book 1: AI Fluency",
   order: 10,
-  description: "Introduction to the course and fundamental concepts.",
+  description: "AI fluency: how chatbots work, prompting, personalizing your tools and checking their work.",
 }
 
 const chapters = Object.values(chapterModules).map(chapter => ({ ...chapter.default, sectionId: config.id }) )
